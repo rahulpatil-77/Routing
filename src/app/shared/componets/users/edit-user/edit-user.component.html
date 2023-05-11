@@ -1,0 +1,19 @@
+<div class="row mt-4">
+    <div class="col-md-8 offset-2">
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" name="" [value]="selectedUser.userName" #userName id="username" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="userid">User Id</label>
+            <select name="" disabled id="userid" [value]="selectedUser.id" #userid class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select></div>
+            <div class="text-right">
+                <button class="btn btn-primary" (click)="onUpdateUser(userName, userid)" >Update User</button>
+            </div>
+    </div>
+
+</div>

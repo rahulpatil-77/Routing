@@ -1,0 +1,21 @@
+
+
+<!-- {{productInfo | json}} -->
+
+<div class="row my-4">
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item"
+            [routerLink]="['/products', prod.pid]"
+             *ngFor="let prod of productInfo" [ngClass]="{active: selectProdid === prod.pid}">
+                {{prod.pName}}
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <!-- <app-product></app-product> -->
+    </div>
+    <div class="my-4">
+        <button class="btn btn-primary" (click)="goToUsers()">Go To Users</button>
+    </div>
+</div>

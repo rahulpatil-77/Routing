@@ -1,0 +1,21 @@
+
+<div class="row mt-4
+">
+    <div class="col-md-8 offset-2">
+        <div class="form-group">
+            <label for="pname">Product Name</label>
+            <input type="text" name="" id="pname" [value]="selectedProduct.pName" #pname class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="pstatus">Product Status</label>
+            <select name="" id="" [value]="selectedProduct.pStatus" #pstatus class="form-control">
+                <option value="InProgress">InProgress</option>
+                <option value="Dispatched">Dispatched</option>
+                <option value="Delivered">Delivered</option>
+            </select>        
+        </div>
+    </div>
+</div>
+<div class="text-right">
+    <button class="btn btn-primary" (click)="onUpdateProduct(pname, pstatus)" >Update Product</button>
+</div>

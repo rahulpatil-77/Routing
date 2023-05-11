@@ -1,0 +1,19 @@
+
+<div class="card mt-4">
+    <div class="card-header">
+        <p>the Username is <strong>{{usersObj.userName}}</strong></p>
+    </div>
+    <div class="card-body">
+        <p>this User Id is <strong>{{usersObj.id}}</strong></p>
+        <button class="btn btn-primary" [routerLink]="['/users',usersObj.id, 'edit']">Edit User</button>
+    </div>
+
+</div>
+
+<a href="javascript:;" [routerLink]="['/users', 3]">
+    Load july
+</a>
+    
+
+
+
